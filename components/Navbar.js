@@ -5,11 +5,11 @@ const Navbar = () => {
         
         <nav>
             <div className="logo">
-                <H1><h1>Ninja List</h1></H1>
+                <H1>Ninja List</H1>
 
             </div>
             <Navigation>
-            <StyledLink href="/">Home</StyledLink>
+            <StyledLink href="/">Home</StyledLink >
             <StyledLink href="/about">About</StyledLink>
             <StyledLink href="/ninjas">Ninja Listing</StyledLink>
             </Navigation>

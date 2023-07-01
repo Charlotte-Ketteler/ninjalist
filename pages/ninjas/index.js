@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Ninjas = () => {
     return ( 
 <div>
-    <H1><h1>All Ninjas</h1></H1>
+    <H1>All Ninjas</H1>
     <Line/>
 </div>
      );
