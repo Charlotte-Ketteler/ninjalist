@@ -1,11 +1,14 @@
 import Link from "next/link";
 import styled from "styled-components";
+import Image from "next/image";
+
 const Navbar = () => {
     return ( 
         
         <nav>
             <div className="logo">
-                <H1>Ninja List</H1>
+                <Image src="/logo.png" width={128} height={77}/>
+               
 
             </div>
             <Navigation>
@@ -34,7 +37,3 @@ text-decoration: none;
 margin 10px; 
 `;
 
-const H1 = styled.h1`
-margin-left: 30px; 
-font-size: 15px; 
-`;

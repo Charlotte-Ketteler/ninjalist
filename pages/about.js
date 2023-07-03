@@ -1,9 +1,14 @@
 import styled from "styled-components";
+import Head from "next/head";
 
 const  About= () => {
     return (  
+        <>
+        <Head>
+        <title>Ninja List | About</title>
+        <meta name="keywords" content="ninjas"/>
+        </Head>
         <div>
-            
             <H1>About</H1>
             <Line/>
             <MainPart>
@@ -12,6 +17,7 @@ const  About= () => {
             </PTag>
             </MainPart>
         </div>
+        </>
     );
 }
  

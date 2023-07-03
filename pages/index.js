@@ -1,12 +1,16 @@
 
 import Link from "next/link";
 import styled from "styled-components";
-
+import Head from "next/head";
 
 export default function HomePage() {
   return (
+    <>
+    <Head>
+    <title>Ninja List | Home</title>
+    <meta name="keywords" content="ninjas"/>
+    </Head>
     <div>
-     
      <H1> Homepage</H1>
  <Line/>
       <MainPart>
@@ -20,6 +24,7 @@ export default function HomePage() {
     See Ninja Listing</StyledLink></ButtonStyle>
     
     </div>
+    </>
   );
 }
 
