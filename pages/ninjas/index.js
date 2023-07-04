@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Link from "next/link";
 
 export const getStaticProps = async () => {
     const response = await fetch('https://jsonplaceholder.typicode.com/users');
@@ -14,11 +15,12 @@ const Ninjas = ({ninjas}) => { // oder (props.ninjas)
 <div>
     <H1>All Ninjas</H1>
     {ninjas.map(ninjas => (
-        <div key={ninjas.id}>
-            <a>
+        <Link href={'/ninjas/' + ninjas.id} key={ninjas.id}>
+           <List> 
                 <h3>{ninjas.name}</h3>
-            </a>
-    </div>
+           
+            </List>
+    </Link>
     ))}
     <Line/>
 </div>
@@ -35,4 +37,14 @@ font-size: 20px;
 const Line = styled.hr`
 color: black;
 margin: 30px; 
+`;
+
+const List = styled.li`
+background-color: #EAEAEA;
+list-style: none;
+height: 70px;
+width: 90%;
+display: flex;
+margin: 10px; 
+justify-content: center; 
 `;
